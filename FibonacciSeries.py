@@ -1,0 +1,11 @@
+n=int(input("Enter a number:"))
+i,j=0,1
+k=i+j
+print(i,j,end=" ")
+l=2
+while(i<=n):
+      print(k,end=" ")
+      i=j
+      j=k
+      k=i+j
+      l=l+1

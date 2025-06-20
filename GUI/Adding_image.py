@@ -1,0 +1,10 @@
+from tkinter import *
+w = Tk()
+w.title("Adding Image...")
+w.config(bg="Green")
+w.geometry("800x800")
+Bg=PhotoImage(file="C:\Gopal coding\Python\GUI\image1.png")
+Bg=Bg.subsample(3,3)
+label=Label(w,image=Bg,text = "Gopal Sharma.....",compound="top",font = ("Arial Rounded MT Bold",30,"bold"), bg="yellow")
+label.place(x=100,y=100)
+w.mainloop()

@@ -1,0 +1,52 @@
+from tkinter import *
+window = Tk()
+window.title("My first Calculator..")
+window.config(bg="white")
+window.geometry("600x700")
+def Add():
+    x=int(en.get())
+    y=int(en1.get())
+    Addition=x+y
+    lb2.config(text="Addition is : "+ str(Addition))
+def Sub():
+    x=int(en.get())
+    y=int(en1.get())
+    Subtraction = x-y
+    lb3.config(text="Subtraction is : " + str(Subtraction))
+def Mult():
+    x=int(en.get())
+    y=int(en1.get())
+    mult=x*y
+    lb4.config(text="Multiplication is : " + str(mult))
+def divide():
+    x=int(en.get())
+    y=int(en1.get())
+    divide=x/y
+    lb5.config(text="Division is : " + str(divide))
+lb=Label(window,text="Enter first Number",fg="Black",bg="white",font=("Arial",20))
+lb.place(x=50,y=50)
+en=Entry(window,width=50)
+en.place(x=50,y=90)
+lb1=Label(window,text="Enter Second Number",fg="Black",bg="white",font=("Arial",20))
+lb1.place(x=20,y=120)
+en1=Entry(window,width=50)
+en1.place(x=70,y=160)
+bt1=Button(window,text="+",bg="navy",fg="white",font=("Helvetica", 10, "bold italic"),width=20,height=2,relief="ridge",bd=5,cursor="hand2",command=Add)
+bt1.place(x=100,y=300)
+bt2=Button(window,text="-",bg="navy",fg="white",font=("Helvetica", 10, "bold italic"),width=20,height=2,relief="ridge",bd=5,cursor="hand2",command=Sub)
+bt2.place(x=100,y=350)
+bt3=Button(window,text="X",bg="navy",fg="white",font=("Helvetica", 10, "bold italic"),width=20,height=2,relief="ridge",bd=5,cursor="hand2",command=Mult)
+bt3.place(x=100,y=400)
+bt4=Button(window,text="/",bg="navy",fg="white",font=("Helvetica", 10, "bold italic"),width=20,height=2,relief="ridge",bd=5,cursor="hand2",command=divide)
+bt4.place(x=100,y=450)
+bt5=Button(window,text="Add",bg="navy",fg="white",font=("Helvetica", 10, "bold italic"),width=20,height=2,relief="ridge",bd=5,cursor="hand2",command=Add)
+bt5.place(x=100,y=500)
+lb2 = Label(window,text=" ",font=("Helvetica",30,"bold italic"),bg="#ffffff",fg="#1e90ff",bd=4,relief="groove")
+lb2.place(x=400,y=600)
+lb3=Label(window,text=" ",font=("Helvetica",30,"bold italic"),bg="#ffffff",fg="#1e90ff",bd=4,relief="groove")
+lb3.place(x=800,y=600)
+lb4=Label(window,text=" ",font=("Helvetica",30,"bold italic"),bg="#ffffff",fg="#1e90ff",bd=4,relief="groove")
+lb4.place(x=400,y=700)
+lb5=Label(window,text=" ",font=("Helvetica",30,"bold italic"),bg="#ffffff",fg="#1e90ff",bd=4,relief="groove")
+lb5.place(x=800,y=700)
+window.mainloop()

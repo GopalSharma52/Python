@@ -1,0 +1,10 @@
+class Person:
+  name = "GOPAL"
+  Course = "Btech"
+  def info(Self):
+    print(f"{Self.name} is Pursuning {Self.Course}")
+a = Person()
+a.name="Shiva"
+a.Course = "11th"
+# print(a.name,a.Course)
+a.info()
