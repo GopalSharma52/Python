@@ -2,7 +2,7 @@ from tkinter import *
 window = Tk()
 window.title("Facebook log.in page")
 window.config(bg="white")
-window.iconbitmap("C:\photos\DCIM\Important documents\facebook_icon.ico")  # Replace with your file name
+# window.iconbitmap("C:\Gopal coding\Python\GUI\facebook_icon")  # Replace with your file name
 # Continue with your GUI setup...
 label = Label(window, text="Facebook", font=("Arial", 40, "bold"), fg="blue", bg="white")
 label.place(x=130, y=130)
